@@ -9,7 +9,7 @@ import os
 # ======================
 # LOAD EXCEL
 # ======================
-url = "https://raw.githubusercontent.com/USERNAME/chatbot-rag/main/data.xlsx"
+url = "https://raw.githubusercontent.com/gigiel2011/chatbot-rag-CLQ/main/data.xlsx"
 df = pd.read_excel(url, engine='openpyxl')
 
 # ======================
