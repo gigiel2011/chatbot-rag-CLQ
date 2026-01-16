@@ -9,8 +9,8 @@ import os
 # ======================
 # LOAD EXCEL
 # ======================
-df = pd.read_excel("data.xlsx")
-df["text"] = df.astype(str).agg(" | ".join, axis=1)
+url = "https://raw.githubusercontent.com/USERNAME/chatbot-rag/main/data.xlsx"
+df = pd.read_excel(url, engine='openpyxl')
 
 # ======================
 # SIMPLE RAG (TF-IDF)
